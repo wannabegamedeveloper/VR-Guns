@@ -1,0 +1,33 @@
+{
+    "name": "GunInput",
+    "maps": [
+        {
+            "name": "Gun",
+            "id": "297d30be-7819-42a1-9c5b-8791e733862f",
+            "actions": [
+                {
+                    "name": "Shoot",
+                    "type": "Button",
+                    "id": "50ecd55c-5d0e-47d4-ad57-2a191e3c9a79",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "826a178f-49da-41b7-924d-68c4143971bd",
+                    "path": "<XRController>{RightHand}/triggerPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Shoot",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

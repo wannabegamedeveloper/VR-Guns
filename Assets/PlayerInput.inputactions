@@ -33,9 +33,17 @@
             "id": "95a5f20e-b5d9-43bc-a6bb-cda43fa6e7fe",
             "actions": [
                 {
-                    "name": "Grab",
+                    "name": "RightHand",
                     "type": "Value",
                     "id": "f069902a-4813-42b9-b68a-ff236fb2465c",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "LeftHand",
+                    "type": "Value",
+                    "id": "d8421e62-f774-4951-b996-b55437e7b89c",
                     "expectedControlType": "Axis",
                     "processors": "",
                     "interactions": ""
@@ -49,7 +57,18 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Grab",
+                    "action": "RightHand",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c10311e6-e3c1-40a8-b039-638620f34e22",
+                    "path": "<XRController>{LeftHand}/grip",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LeftHand",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

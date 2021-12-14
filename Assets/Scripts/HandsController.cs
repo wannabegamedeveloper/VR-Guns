@@ -1,18 +1,33 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class HandsController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private PlayerInput playerInput;
+
+    private void Awake()
     {
-        
+        playerInput = new PlayerInput();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnEnable()
     {
-        
+        playerInput.Enable();
+    }
+
+    private void Start()
+    {
+        playerInput.Hands.Grab.performed += Hand;
+    }
+
+    private void Hand(InputAction.CallbackContext callbackContext)
+    {
+        print(callbackContext.ReadValue<float>());
+    }
+    
+    private void OnDisable()
+    {
+        playerInput.Disable();
     }
 }

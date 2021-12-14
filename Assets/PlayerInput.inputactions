@@ -1,5 +1,5 @@
 {
-    "name": "GunInput",
+    "name": "PlayerInput",
     "maps": [
         {
             "name": "Gun",
@@ -23,6 +23,33 @@
                     "processors": "",
                     "groups": "",
                     "action": "Shoot",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Hands",
+            "id": "95a5f20e-b5d9-43bc-a6bb-cda43fa6e7fe",
+            "actions": [
+                {
+                    "name": "Grab",
+                    "type": "Value",
+                    "id": "f069902a-4813-42b9-b68a-ff236fb2465c",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "0a9a9cb5-e281-43ce-8046-556849812941",
+                    "path": "<XRController>{RightHand}/grip",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Grab",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
